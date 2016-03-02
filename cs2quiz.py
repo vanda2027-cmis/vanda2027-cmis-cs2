@@ -28,7 +28,7 @@
 #6 3pts) What are the 3 phases that every computer program has? What happens in
 #        each of them
 #	1: Input
-#	2: calling function
+#	2: process
 #	3: Output
 #
 
