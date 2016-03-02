@@ -35,7 +35,7 @@
 C1= raw_input ("Area of C1:")
 C2= raw_input ("Area of C2:")
 C3= raw_input ("Area of C3:")
-Totals= int(c1) + int(c2) + int(c3)
+Total= int(c1) + int(c2)+ int(c3)
 
 Lists= ["Circle", "Diameter"]
 import math
