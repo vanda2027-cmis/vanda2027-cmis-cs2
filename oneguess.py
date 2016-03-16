@@ -1,8 +1,12 @@
 
 def main ():
+    import random
     minimum = raw_input ("What is the minimum number?: ")
     maximum = raw_input ("What is the maximum number?: ")
-    guess= raw_input ("I'm thinking of a number from" + str(minimum) "to" + str(maximum) + "./n" "What do you think it is?:")
+    random = random.randint (minimum, maximum)
+    print "I'm thinking of a number between", str(minimum), "and", str(maximum)
+    guess = raw_input ("What do you think it is?:")
+    difference = abs(guessnumber - random)
 
    
     if target> str(abs(guess)):
