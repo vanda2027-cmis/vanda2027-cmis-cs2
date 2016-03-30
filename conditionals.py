@@ -29,6 +29,11 @@ def treasureboxes (Seconddecision):
         print "You got a free pass! This means that you can choose to not answer 1 question."
     else:
         print "Too bad! Nothing in the box!"
+    
+start = time.time(30)
+    print("You have 30 seconds!!")
+end = time.time(30)
+
 
     
     
@@ -41,6 +46,7 @@ def main ():
     caveentrance (Playerdecision)
     Seconddecision = raw_input ("There are 5 tresure boxes placed infront of you, which one would you like to open 1, 2, 3 ,4 ,or 5")
     treasureboxes (Seconddecision)
+    Question1 = raw_input ("
     
     
     
