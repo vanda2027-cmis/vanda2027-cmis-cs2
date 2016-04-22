@@ -10,11 +10,26 @@ def main():
 main()
 
 def countup(n):
-    if n >= 0
+    if n >= 100:
         print "blastoff!"
     else:
         print n
         countup (n+1)
+
+def main():
+    countup(0)
+main()
+
+def countdown(x):
+    if x <= 0:
+        print "blastoff!"
+    else:
+        print x
+        countdown (x-1)
+def main ():
+    countdown(100)
+main()
+
 
 
 
