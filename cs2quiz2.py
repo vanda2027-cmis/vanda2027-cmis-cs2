@@ -50,11 +50,11 @@
 
 
 #Giving the raw input to type numbers in
-def main ():
+def main():
     print "Type in 3 different numbers (decimals are OK!)"
-    float(raw_input("A:"))
-    float(raw_input("B:"))
-    float(raw_input("C:"))
+    a = float(raw_input("A:"))
+    b = float(raw_input("B:"))
+    c = float(raw_input("C:"))
     
   
 
@@ -75,6 +75,7 @@ def output (x):
         return "You didn't follow directions."
     else:
         return "The largest number was {}.". format (x)
+main()
 
 
 
