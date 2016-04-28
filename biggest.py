@@ -1,16 +1,20 @@
-def biggest (num, largest):
-    if num == "":
-        return largest
-    elif largest >= float(num):
-        num = raw_input ("Next: ")
-        return biggest (num, largest)
-    elif largest == float(num):
-        num = raw_input ("Next: ")
-        return biggest (num, largest)
+def biggest (num):
+	new = raw_input ("Next: ")
+    if new == "":
+        
+		new > num:
+        (biggest float(new))
+        num > new:
+        biggest(num)
+
+def main():
+	ans = biggest (0,0)
+	print ans
+
+
+
+main()
    
         
         
-def main():
-    ans = biggest (0,0)
-    print ans
-main()
+
