@@ -1,19 +1,39 @@
 def biggest (num):
-	new = raw_input ("Next: ")
+    new = raw_input ("Next: ")
     if new == "":
-        
-		new > num:
-        (biggest float(new))
-        num > new:
-        biggest(num)
+		return num
+    elif float(new) > float(num):
+        return biggest (float(new))
+    elif num > float(new):
+        return biggest(num)
 
 def main():
-	ans = biggest (0,0)
+	ans = biggest (-float("inf"))
 	print ans
-
-
-
 main()
+
+def smallest (num):
+    new = raw_input ("Next: ")
+    if new == "":
+        return num
+    elif float(new) < float(num):
+        return smallest (float(new))
+    elif float(num) < float(new):
+        return smallest(float(num))
+
+def main():
+    ans = smallest (float("inf"))
+    print ans
+main()
+
+def pow(x,n):
+    if == 1
+        return x
+    else:
+        return x * pow(x, n)
+
+
+
    
         
         
