@@ -27,10 +27,10 @@ def main():
 main()
 
 def pow(x,n):
-    if == 1
+    if n == 1
         return x
     else:
-        return x * pow(x, n)
+        return x * pow(x, n-1)
 
 
 
