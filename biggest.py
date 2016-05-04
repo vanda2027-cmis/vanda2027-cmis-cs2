@@ -27,10 +27,17 @@ def main():
 main()
 
 def pow(x,n):
-    if n == 1
-        return x
+    if n == 0:
+        return 1
     else:
         return x * pow(x, n-1)
+def main ():
+    ans = pow(10,3)
+    print ans
+    
+
+main()
+	
 
 
 
