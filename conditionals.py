@@ -9,11 +9,10 @@ import time
 # you can gain more energy from the trasure boxes.
 # The goal is to survive through this cave without before running out of energy! (All of them are one word answer.)
 
-def caveentrance (decision):
-        print "You have 7 energy levels, which is the maximum amount of energy you can have. Everytime you answer a question incorrectly, you'll loose your energy level."
-        Playerdecision_2 = raw_input("Do you want to play the game? ")
-        return yesno (Playerdecision_2)
-    if decision = "yes":
+def caveentrance ():
+    decision = raw_input("Do you want to enter the cave?")
+    if decision == "yes":
+        print "You have 7 energy levels, which is the maximum amount of energy you can have. Everytime you answer a question incorrectly, you'll lose your energy level."
         print "Good Luck!"
     elif decision == "no":
         print "Good Bye."
@@ -106,7 +105,7 @@ def tenquestion (q):
         return 0
 
 
-total = treasureboxes(q1ans) + firstquestion() + secondquestion()
+total = onequestion(q1ans) + twoquestion(q2ans) + threequestion(q3ans) + fourquestion(q4ans) + fivequestion(q5ans) + sixquestion(q6ans) + sevenquestion(q7ans) + eightquestion(q8ans) + ninequestion(q9ans) + tenquestion(q10ans)
 
 
 
@@ -119,8 +118,7 @@ total = treasureboxes(q1ans) + firstquestion() + secondquestion()
     
     
 def main ():
-    Playerdecision = raw_input("Do you want to enter to cave? ")
-    answer = caveentrance (Playerdecision)
+    caveentrance()
     treasureboxes (answer)
     
     
