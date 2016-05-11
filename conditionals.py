@@ -35,14 +35,19 @@ def treasureboxes (Seconddecision):
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def secondquestion():
-    if q2ans == 
+def firstquestion():
+    if firstdecision == "red":
+        return 1
+    else:
+        return 0
+def secondquestion ():
+    if seconddecision == "vegetables"
         return 1
     else:
         return 0
 
 
-total = treasureboxes(q1ans) + secondquestion()
+total = treasureboxes(q1ans) + firstquestion() + secondquestion()
 
 
 
