@@ -12,25 +12,25 @@ import time
 def caveentrance ():
     decision = raw_input("Do you want to enter the cave?")
     if decision == "yes":
-        print "You have 7 energy levels, which is the maximum amount of energy you can have. Everytime you answer a question incorrectly, you'll lose your energy level."
+        print "You have 5 energy levels, which is the maximum amount of energy you can have. Everytime you answer a question incorrectly, you'll lose your energy level."
         print "Good Luck!"
     elif decision == "no":
         print "Good Bye."
-q1ans = raw_input("QUESTION: What color sweat do hippos have when they are upset? ")
-q2ans = raw_input ("QUESTION: Are tomatoes fruits or vegetables? ")
-q3ans = raw_input ("QUESTION: What is the fear of fun called? ")
-q4ans = raw_input ("QUESTION: Which was the 1st non Test playing country to beat India in an international match?")
-q5ans = raw_input ("QUESTION: The nickname of Glenn McGrath is what?" )
-q6ans = raw_input ("QUESTION: Nuclear sizes are expressed in what unit name?")
-q7ans = raw_input ("QUESTION: Light from the Sun reaches us in how many minutes")
-q8ans = raw_input ("QUESTION: A teetotaler is a person that never drinks what?")
-q9ans = raw_input ("QUESTION: The lowest natural temperature ever directly recorded at ground level was measured on what Continent?")
-q10ans = raw_input ("QUESTION: What was first feature length animated film?")
+        quit()
 
 def challenge():
         if random.random() > 0.5:
-            bonus = raw_input ("What’s the name for excessive bodily hair growth in women?")
+            bonus = raw_input("CHALLENGE: What's the name for excessive bodily hair growth in women?")
             return bonus
+        else:
+            return None
+def challengeresult(challenge):
+    if challenge == None:
+        return 0
+    elif challenge == "Hirsutism":
+        return 1
+    else:
+        return 0
         
 def onequestion(ans):
     if ans == "red":
@@ -40,86 +40,117 @@ def onequestion(ans):
         print "Wrong!! You have one less energy level "
         return 0
         
-def twoquestion (q):
+def twoquestion (ans):
     if ans == "vegetables":
-        return 1
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def threequestion (q):
-    if ans == "Cherophobia":
-        return 1
+def threequestion (ans):
+    if ans == "cherophobia":
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def fourquestion (q):
+def fourquestion (ans):
     if ans == "sri lanka":
-        return 1
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def fivequestion (q):
-    if ans == "Penguin":
-        return 1
+def fivequestion (ans):
+    if ans == "penguin":
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def sixquestion (q):
-    if ans == "Fermi":
-        return 1
+def sixquestion (ans):
+    if ans == "fermi":
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def sevenquestion (q):
+def sevenquestion (ans):
     if ans == "1":
-        return 1
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def eightquestion (q):
+def eightquestion (ans):
     if ans == "alcohol":
-        return 1
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def ninequestion (q):
+def ninequestion (ans):
     if ans == "antarctica":
-        return 1
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def tenquestion (q):
+def tenquestion (ans):
     if ans == "snow white":
-        return 1
         print "Correct! You are one step closer to the exit!."
+        return 1
     else:
         print "Wrong!! You have one less energy level "
         return 0
-
-
-total = onequestion(q1ans) + twoquestion(q2ans) + threequestion(q3ans) + fourquestion(q4ans) + fivequestion(q5ans) + sixquestion(q6ans) + sevenquestion(q7ans) + eightquestion(q8ans) + ninequestion(q9ans) + tenquestion(q10ans)
-
-
-
-
-
+def final ():
+    q1 = raw_input("FINAL: In the 2011/2012 Official Rules of the NBA you will learn the definition of what term on page 21? ")
+    q2 = raw_input("FINAL: Early in Conrad's 1903 novella, Marlow makes a comment one of the dark places on earth. About what place does he say this? ")
+    q3 = raw_input("FINAL: As Marlow approaches, what are Kurtz's final words? ")
     
-        
+def q1 (ans)
+    if ans == "legit goal"
+        print "Correct!!!!!"
+    else:
+        print "Wrong!!!!!"
+def q2 (ans)
+    if ans == "london"
+        print "Correct!!!!!"
+    else:
+        print "Wrong!!!!!"
+def q3 (ans)
+    if ans == "the horror"
+        print "Correct!!!!!"
+    else:
+        print "Wrong!!!!!"
 
-
-    
-    
 def main ():
     caveentrance()
-    treasureboxes (answer)
-    
+    q1ans = raw_input("QUESTION: What color sweat do hippos have when they are upset? ")
+    q1result = onequestion(q1ans)
+    q2ans = raw_input ("QUESTION: Are tomatoes fruits or vegetables? ")
+    q2result = twoquestion(q2ans)
+    q3ans = raw_input ("QUESTION: What is the fear of fun called? ")
+    q3result = threequestion(q3ans)
+    q4ans = raw_input ("QUESTION: Which was the 1st non Test playing country to beat India in an international match? ")
+    q4result = fourquestion(q4ans)
+    q5ans = raw_input ("QUESTION: The nickname of Glenn McGrath is what? " )
+    q5result = fivequestion(q5ans)
+    q6ans = raw_input ("QUESTION: Nuclear sizes are expressed in what unit name? ")
+    q6result = sixquestion(q6ans)
+    q7ans = raw_input ("QUESTION: Light from the Sun reaches us in how many minutes")
+    q7result = sevenquestion(q7ans)
+    q8ans = raw_input ("QUESTION: A teetotaler is a person that never drinks what? ")
+    q8result = eightquestion(q8ans)
+    q9ans = raw_input ("QUESTION: The lowest natural temperature ever directly recorded at ground level was measured on what Continent? ")
+    q9result = ninequestion(q9ans)
+    q10ans = raw_input ("QUESTION: What was first feature length animated film? ")
+    q10result = tenquestion(q10ans)
+    total = q1result + q2result + q3result + q4result + q5result + q6result + q7result + q8result + q9result +q10result 
+    bonusans = challengeresult(challenge())
+    if total + bonusans <= 5:
+        print "You got only " + str(total) + " questions correct!"
+    elif total + bonusans >= 6:
+        print "You got" + str(total) + "questions correct!"
     
 main()
