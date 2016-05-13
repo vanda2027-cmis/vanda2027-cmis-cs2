@@ -17,9 +17,22 @@ def caveentrance ():
     elif decision == "no":
         print "Good Bye."
         quit()
+want = raw_input ("Do you really want to play this game?")
+def doyoureally(want):
+    if want == "yes":
+        print "LOL OK"
+
+doyoureally(want)
+reallywant = raw_input ("Are you sure ?")
+
+def reallyreally(reallywant):
+      if reallywant == "yes":
+        print "OKAY! :D"
+reallyreally(reallywant)
+            
 
 def challenge():
-        if random.random() > 0.5:
+        if randomdecider():
             bonus = raw_input("CHALLENGE: What's the name for excessive bodily hair growth in women?")
             return bonus
         else:
@@ -103,26 +116,36 @@ def tenquestion (ans):
     else:
         print "Wrong!! You have one less energy level "
         return 0
-def final ():
-    q1 = raw_input("FINAL: In the 2011/2012 Official Rules of the NBA you will learn the definition of what term on page 21? ")
-    q2 = raw_input("FINAL: Early in Conrad's 1903 novella, Marlow makes a comment one of the dark places on earth. About what place does he say this? ")
-    q3 = raw_input("FINAL: As Marlow approaches, what are Kurtz's final words? ")
     
-def q1 (ans)
-    if ans == "legit goal"
-        print "Correct!!!!!"
+def q1 (ans):
+    if ans == "legit goal":
+        print "Correct!!!!! :'D"
     else:
-        print "Wrong!!!!!"
-def q2 (ans)
-    if ans == "london"
-        print "Correct!!!!!"
+        print "Wrong!!!!! :'("
+def q2 (ans):
+    if ans == "london":
+        print "Correct!!!!! :'D"
     else:
-        print "Wrong!!!!!"
-def q3 (ans)
-    if ans == "the horror"
-        print "Correct!!!!!"
+        print "Wrong!!!!! :'("
+def q3 (ans):
+    if ans == "the horror":
+        print "Correct!!!!! :'D"
     else:
-        print "Wrong!!!!!"
+        print "Wrong!!!!! :'("
+def randomq (randomnum):
+    if randomnum == 1:
+        q1 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE: In the 2011/2012 Official Rules of the NBA you will learn the definition of what term on page 21? "))
+    elif randomnum == 2:
+        q2 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE: Early in Conrad's 1903 novella, Marlow makes a comment one of the dark places on earth. About what place does he say this? "))
+    elif randomnum == 3:
+        q3 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE: As Marlow approaches, what are Kurtz's final words? "))
+
+def randomdecider():
+    if random.random() > 0.5:
+        return True
+    else:
+        return False
+    
 
 def main ():
     caveentrance()
@@ -149,8 +172,11 @@ def main ():
     total = q1result + q2result + q3result + q4result + q5result + q6result + q7result + q8result + q9result +q10result 
     bonusans = challengeresult(challenge())
     if total + bonusans <= 5:
-        print "You got only " + str(total) + " questions correct!"
+        out = """You got only {} questions correct!""".format(total)
+        print out
     elif total + bonusans >= 6:
-        print "You got" + str(total) + "questions correct!"
+        out = """You got {} questions correct!""".format(total)
+    randomq(random.randint(1,3))
+
     
 main()
