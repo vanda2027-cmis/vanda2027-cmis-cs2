@@ -89,7 +89,7 @@ def sixquestion (ans):
         print "Wrong!! You have one less energy level "
         return 0
 def sevenquestion (ans):
-    if ans == "1":
+    if ans == 8:
         print "Correct! You are one step closer to the exit!."
         return 1
     else:
@@ -134,14 +134,14 @@ def q3 (ans):
         print "Wrong!!!!! :'("
 def randomq (randomnum):
     if randomnum == 1:
-        q1 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE: In the 2011/2012 Official Rules of the NBA you will learn the definition of what term on page 21? "))
+        q1 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE. IF YOU GET IT RIGHT YOU WIN: In the 2011/2012 Official Rules of the NBA you will learn the definition of what term on page 21? "))
     elif randomnum == 2:
-        q2 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE: Early in Conrad's 1903 novella, Marlow makes a comment one of the dark places on earth. About what place does he say this? "))
+        q2 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE. IF U GET IT RIGHT YOU WIN: Early in Conrad's 1903 novella, Marlow makes a comment one of the dark places on earth. About what place does he say this? "))
     elif randomnum == 3:
-        q3 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE: As Marlow approaches, what are Kurtz's final words? "))
+        q3 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE. IF YOU GET IT RIGHT YOU WIN: As Marlow approaches, what are Kurtz's final words? "))
 
 def randomdecider():
-    if random.random() > 0.5:
+    if random.random() > 0.2:
         return True
     else:
         return False
@@ -161,7 +161,7 @@ def main ():
     q5result = fivequestion(q5ans)
     q6ans = raw_input ("QUESTION: Nuclear sizes are expressed in what unit name? ")
     q6result = sixquestion(q6ans)
-    q7ans = raw_input ("QUESTION: Light from the Sun reaches us in how many minutes")
+    q7ans = int(raw_input ("QUESTION: Light from the Sun reaches us in about how many minutes"))
     q7result = sevenquestion(q7ans)
     q8ans = raw_input ("QUESTION: A teetotaler is a person that never drinks what? ")
     q8result = eightquestion(q8ans)
