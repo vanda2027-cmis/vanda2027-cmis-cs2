@@ -28,3 +28,11 @@ python...- open the file in website
 Control D exit python
 need quotation to print 
 
+
+#Write a script that asks the user to enter a series of numbers.
+#When the user types in nothing, it should return the average of all the odd numbers
+#that were typed in. 
+#In your code for the script, add a comment labeling the base case  on the line BEFORE the base case.
+#Also add a comment label BEFORE the recursive case.
+#It is NOT NECESSARY to print out a running total with each user input.
+
