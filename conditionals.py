@@ -89,7 +89,7 @@ def sixquestion (ans):
         print "Wrong!! You have one less energy level "
         return 0
 def sevenquestion (ans):
-    if ans == 8:
+    if ans == 8 or 8.6:
         print "Correct! You are one step closer to the exit!."
         return 1
     else:
@@ -141,7 +141,7 @@ def randomq (randomnum):
         q3 (raw_input("FINAL: IF YOU GET THIS QUESTION WRONG YOU LOSE. IF YOU GET IT RIGHT YOU WIN: As Marlow approaches, what are Kurtz's final words? "))
 
 def randomdecider():
-    if random.random() > 0.2:
+    if not random.random() < 0.5 and random.random() < 0.5:
         return True
     else:
         return False
