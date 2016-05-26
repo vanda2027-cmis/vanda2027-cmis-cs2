@@ -16,4 +16,22 @@ def countdownup(x):
 countdownup (67)
 countdownup (-123)
     
-def addup (x):
+def countfrom2 (x, y):
+        while x < y:
+            print x
+            x += 1
+        while x > y:   
+            print x
+            x -= 1
+countfrom2 (-10,10)
+countfrom2 (12,3)
+
+def sumofodds (x,y):
+        total = 0
+        while n > 0
+            if n % 2 = 1
+            total += n
+            n += 1
+
+
+
