@@ -1,28 +1,36 @@
 import random
+
+
+
 def rounds(numrounds, correct):
     if numrounds == 0:
-        return "You got " + str(correct) + "rounds correct."
+        out = """You got {} rounds correct.""".format(correct)
+        print out
     else:
-        return "Starting round: " + str(numrounds)
-    
+        out = """Starting round {}.""".format(numrounds)
+        print out
+
+        correct += game(random.randint(1,100),5)
+        return rounds(numrounds - 1, correct)
+
 def game(guess, tries):
-    random = (random.randint(1,100))
-    put = int(raw_input("Guess a number: "))
-    if random == guess:
+    guess = raw_input("Guess a number: ")
+    randomnum = (random.randint(1,100))
+    if randomnum == int(guess):
         print "That's correct!"
-        return game(guess, tries - 1)
-    elif random > guess:
+    elif tries == int(1):
+        print "You lose"
+        return 0
+    elif randomnum < int(guess):
         print "That's too high"
-        return game(guess, tries - 1)
-    elif random < guess:
+        return game(randomnum, tries - 1)
+    elif randomnum > int(guess):
         print "That's too low"
-        return game(guess, tries - 1)
+        return game(randomnum, tries - 1)
 
 def main():
-    res = rounds(3, 0)
-    print res
-    game(guess, tries)
-    
+    print rounds(5,0)
+  
     
 main()
 
